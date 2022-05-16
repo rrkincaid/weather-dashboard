@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title> Weather Dashboard </title>
+</head>
+
+<body>
+<header>
+<h1 class="header bg-primary text-white justify-content align-center"> Weather Dashboard</h1>
+</header>
+<section class="container">
+
+    <div class="row g-3">
+        <h2> Enter City & State Here: </h2>
+        <div class="col-4">
+            <input type="text" class="form-control" placeholder="City" aria-label="City">
+        </div>
+    
+        <div class="col-2">
+            <input type="text" class="form-control" placeholder="State" aria-label="State">
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+<div class="card" style="width: 18rem;">
+    <div id="current-day" class="card-header" placeholder="City">
+        Current Day 
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Chosen City </li>
+        <li class="list-group-item">Temperature </li>
+        <li class="list-group-item">Wind </li>
+        <li class="list-group-item">Humidity </li>
+    </ul>
+</div>
+
+    
+<div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    
+            <div class="card col-12 bg-dark text-light">
+                <div class="card-body">
+                5 DAY FORECAST: 
+                </div>
+            </div>
+
+        <div class="col">
+            <div class="p-3 border bg-primary text-light"> Day 1 Weather (today + 1) </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary text-light"> Day 2 Weather (today + 2) </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary text-light"> Day 3 Weather (today + 3) </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary text-light"> Day 4 Weather (today + 4) </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-primary text-light"> Day 5 Weather (today + 5) </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/script.js"></script>
+
+
+</body>
+</html>
