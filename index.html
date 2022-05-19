@@ -5,7 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=EB+Garamond:ital,wght@1,600&family=M+PLUS+Rounded+1c:wght@100&family=Patrick+Hand&family=Permanent+Marker&family=Rajdhani:wght@300&family=Raleway:wght@200&family=Tajawal:wght@200&family=Tapestry&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -15,15 +21,17 @@
 </head>
 
 <body>
-<header>
-<h1 class="header bg-primary text-white justify-content align-center"> Weather Dashboard</h1>
-</header>
-<section class="container">
+    <header>
+    <h1 class="jumbotron bg-primary text-white justify-content align-center"> Weather Dashboard</h1>
+    </header>
+    <hr>
 
-    <div class="row g-3">
-        <h2> Enter City & State Here: </h2>
+<section class="container">
+    <h4 id="current-day" class="text-white"> </h4>
+    <div class="row g-3 text-white">
+        <h2 class="search-perameters "> Enter City & State Here: </h2>
         <div class="col-4">
-            <input type="text" class="form-control" placeholder="City" aria-label="City">
+            <input type="text" class="city form-control" placeholder="City" aria-label="City">
         </div>
     
         <div class="col-2">
@@ -31,23 +39,24 @@
         </div>
 
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="submit-button btn btn-primary">Submit</button>
         </div>
     </div>
+<hr>
 
-<div class="card" style="width: 18rem;">
-    <div id="current-day" class="card-header" placeholder="City">
-        Current Day 
+<div class="card-weather" style="width: 18rem;">
+    <div id="chosen-city" class="card-header" placeholder="Chosen City" aria-label="Chosen City">
+        City 
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">Chosen City </li>
-        <li class="list-group-item">Temperature </li>
-        <li class="list-group-item">Wind </li>
-        <li class="list-group-item">Humidity </li>
+        <h5 id= "temperature" class="list-group-item" placeholder="Temperature" aria-label="Temperature"> Temperature </h5>
+        <li id="description" class="list-group-item" placeholder="Description" aria-label="Description"> Description </li>
+        <li id= "wind-speed" class="list-group-item" placeholder="Wind Speed" aria-label="Wind Speed"> Wind Speed </li>
+        <li id= "humidity" class="list-group-item" placeholder="Humidity" aria-label="Humidity"> Humidity </li>
     </ul>
 </div>
-
-    
+ 
+<hr>   
 <div class="container">
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
     
@@ -58,23 +67,24 @@
             </div>
 
         <div class="col">
-            <div class="p-3 border bg-primary text-light"> Day 1 Weather (today + 1) </div>
+            <div id="day-1-weather" class="p-3 border bg-primary text-light"> Day 1 </div>
         </div>
         <div class="col">
-            <div class="p-3 border bg-primary text-light"> Day 2 Weather (today + 2) </div>
+            <div id="day-2-weather" class="p-3 border bg-primary text-light"> Day 2 </div>
         </div>
         <div class="col">
-            <div class="p-3 border bg-primary text-light"> Day 3 Weather (today + 3) </div>
+            <div id="day-3-weather" class="p-3 border bg-primary text-light"> Day 3 </div>
         </div>
         <div class="col">
-            <div class="p-3 border bg-primary text-light"> Day 4 Weather (today + 4) </div>
+            <div id="day-4-weather" class="p-3 border bg-primary text-light"> Day 4  </div>
         </div>
         <div class="col">
-            <div class="p-3 border bg-primary text-light"> Day 5 Weather (today + 5) </div>
+            <div id="day-5-weather" class="p-3 border bg-primary text-light"> Day 5 </div>
         </div>
 
     </div>
 </div>
+
 
 </section>
 
@@ -82,6 +92,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./assets/script.js"></script>
 
-
 </body>
+
 </html>
