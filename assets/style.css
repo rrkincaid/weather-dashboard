@@ -29,7 +29,7 @@ button {
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: url("https://source.unsplash.com/1600x900/?landscape");
+  /* background: url("https://source.unsplash.com/1600x900/?landscape"); */
 }
 
 .search-perameters {
@@ -38,4 +38,10 @@ body {
 
 .w-icon {
   display: 3px;
+}
+
+@media only screen and (max-width: 730px) {
+  justify-content: start;
+  align-items: none;
+  overflow-y: scroll;
 }
