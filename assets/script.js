@@ -1,5 +1,5 @@
 var today = moment();
-$("#current-day").text(today.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+$("#current-day").text(today.format("dddd, MMMM Do YYYY, h:mm a"));
 
 
 
@@ -36,6 +36,7 @@ let weatherData = {
         document.querySelector("#temperature").innerText = temp + "C";
         document.querySelector("#wind-speed").innerText = "Wind Speed" + speed + "km/h";
         document.querySelector("#humidity").innerText = "Humidity" + humidity + "%";
+        //need to also put in querySelectors for #day-1-weather, etc. - need to have similar peramters as main so c/p once code above works 
     }
     };
     console.log(weatherData)
