@@ -28,8 +28,8 @@ function searchWeather(city) {
             console.log(data)
         document.querySelector("#chosen-city").innerText = "Weather in " + city;
         document.querySelector("#temperature").innerText = data.current.temp + " F";
-        document.querySelector("#wind-speed").innerText = "Wind Speed" + data.current.wind_speed + " mph";
-        document.querySelector("#humidity").innerText = "Humidity" + data.current.humidity + "%";
+        document.querySelector("#wind-speed").innerText = "Wind Speed: " + data.current.wind_speed + " mph";
+        document.querySelector("#humidity").innerText = "Humidity " + data.current.humidity + "%";
             
             for (i = 0; i < 5; i++)  {
                 var div = document.createElement("div")

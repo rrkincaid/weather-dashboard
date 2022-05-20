@@ -29,19 +29,30 @@ button {
 
 body {
   font-family: 'Raleway', sans-serif;
-  /* background: url("https://source.unsplash.com/1600x900/?landscape"); */
+  background: url("https://source.unsplash.com/1600x900/?landscape");
+  font-weight: bold;
+  font: white;
+}
+
+p {
+  text: white;
 }
 
 .search-perameters {
   font-style: white;
 }
 
-.w-icon {
+/* .w-icon {
   display: 3px;
-}
+} */
 
 @media only screen and (max-width: 730px) {
   justify-content: start;
   align-items: none;
   overflow-y: scroll;
+}
+
+.card {
+  text-weight: bold;
+  font-style: white;
 }
