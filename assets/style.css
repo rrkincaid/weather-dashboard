@@ -22,7 +22,7 @@ button {
 .card-weather {
   display:flex; 
   justify-content: center;
-  background: lightblue;
+  background: rgb(36, 141, 177);
   flex-wrap: center;
   /* font-family: 'Raleway', sans-serif; */
 }
@@ -55,4 +55,9 @@ p {
 .card {
   text-weight: bold;
   font-style: white;
+}
+
+.future-forecast {
+  text-weight: bold; 
+  font: white;
 }

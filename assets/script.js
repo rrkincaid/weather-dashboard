@@ -14,7 +14,7 @@ $(".submit-button").on("click", function () {
 
 
 function searchWeather(city) {
-    var latLongApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=ad8a1e948374e09ead4e5a1ef9d52398"
+    var latLongApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=ad8a1e948374e09ead4e5a1ef9d52398"
     fetch(latLongApi).then(function (res) {
         return res.json()
     }).then(function (data) {
